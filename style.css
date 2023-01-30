@@ -1,0 +1,23 @@
+body {
+	font-family: Arial;
+}
+
+h1 {
+	text-align: center;
+}
+
+.flexbox {
+	flex-direction: row;
+	align-items: left;
+	display: flex;
+	text-align: left;
+	flex-wrap: wrap;
+}
+
+.flexbox > div {
+	width: 50%;
+}
+
+#ack-header {
+	text-align: center;
+}
