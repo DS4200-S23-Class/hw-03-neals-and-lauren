@@ -11,44 +11,88 @@
     <h1>hw-03: interactive Webpage, and Marks & Channels</h1>
 
     <div class="flexbox">
-            <div> 
-                <img src=img/vis1.png>
+            <div class="row">
+                <div class="item"> 
+                    <img class="image" src=img/vis1.png>
+                </div>
+                <div class="item">
+                    <h3>Marks</h3>
+                       <ul>
+                            <li>Areas depicting each state in the United States of America</li>
+                            <li>Line depicting the electoral vote breakdown given this particular hypothetical</li>
+                        </ul>
+                    <h3>Channels</h3>
+                        <ul>
+                            <li>Color to Distinguish which states would have voted Democratic and which states would have voted Republican</li>
+                                <li>Color was a good choice because it clearly differentiates the two categorical attributes that are being compared</li>
+                            <li>Length of blue and red on the electroal vote breakdwon bar to show a distributon of total votes</li>
+                                <li>Length is a fair choice for a channel but not as strong of a choice as color for these categorical attributes. It serves its purpose summarizing the distribution in a different way</li>
+                        </ul>
+                    <h3>Colormap(s)</h3>
+                        <ul>
+                            <li>Categorical colormpa where red indicates Republican and blue indicates Democrat</li>
+                                <li>This is a good choice as Republican and Democrat are categorical attributes</li>
+                        </ul>
+                </div>
             </div>
-            <div>
-                <h3>Marks</h3>
-                   <ul>
-                        <li>Areas depicting each state in the United States of America</li>
-                        <li>Line depicting the electoral vote breakdown given this particular hypothetical</li>
-                    </ul>
-                <h3>Channels</h3>
-                    <ul>
-                        <li>Color to Distinguis which states would have voted Democratic and which states would have voted Republican</li>
-                        <li>Length of blue and red on the electroal vote breakdwon bar to show a distributon of total votes</li>
-                    </ul>
-                <h3>Colormap(s)</h3>
-                    <ul>
-                        <li>Categorical colormpa where red indicates Republican and blue indicates Democrat</li>
-                    </ul>
+
+            <div class="row">
+                <div class="item">
+                    <img class="image" src=img/vis2.png>
+                </div>
+                <div class="item">
+                    <h3>Marks</h3>
+                       <ul>
+                            <li>Points indicating different batted balls in the 2015 MLB</li>
+                            <li>Lines indicating the general distribution of different hits (ground balls, line drives, fly balls)</li>
+                        </ul>
+                    <h3>Channels</h3>
+                        <ul>
+                            <li>Position, both horizontally and vertically, as points are plotted based on both launch angle and speed off of the bat</li>
+                                <li>Position is a good choice since it clearly shows distribution based on the two quantitatie attributes on the axes</li>
+                            <li>Color indicating score value </li>
+                                <li>Color is an excellent choice, as it draws attention to the most desirable hit (home runs) area of the graph where you can then determine the optimal launch angle and exit velocity</li>
+                        </ul>
+                    <h3>Colormap(s)</h3>
+                        <ul>
+                            <li>Divergent colormap where two colors (purple and oragne) indicate the extremes of a range of hits (abover or below average) and white is a neutral color in the middle that indicates average</li>
+                                <li>A divergent colormap is ideal for a scenario with a "middle" zone, so in this case of plotting quantitative attributes, it is valuable to see how the most successful hits scored</li>
+                        </ul>
+                </div>
             </div>
-            <div>
-                <img src=img/vis2.png>
+
+            <div class="row">
+                <div class="item">
+                    <img class="image" src=img/NewYorkMap.png>
+                </div>
+                <div class="item">
+                    <h3>Marks</h3>
+                       <ul>
+                            <li>Areas depicting different boroughs in New York</li>
+                        </ul>
+                    <h3>Channels</h3>
+                        <ul>
+                            <li>Color</li>
+                                <li>If this chart was only depicting the sum of tons, then color wold not be useufl for plotting that singular attribute. However, in this case, color helps to clearly determin which borough produces the most trash per person</li>
+                        </ul>
+                    <h3>Colormap(s)</h3>
+                        <ul>
+                            <li>Sequential Colormap</li>
+                                <li>This colormap is deal for visualizing an attribute that is quantitiative. Higher tons per person are indiciated by a darker hue while lower tons are indiciated by a lighter hue</li>
+                        </ul>
+                </div>
             </div>
-            <div>
-                <h3>Marks</h3>
-                   <ul>
-                        <li>Points indicating different batted balls in the 2015 MLB</li>
-                        <li>Lines indicating the general distribution of different hits (ground balls, line drives, fly balls)</li>
-                    </ul>
-                <h3>Channels</h3>
-                    <ul>
-                        <li>Position, both horizontally and vertically, as points are plotted based on both launch angle and speed off of the bat</li>
-                        <li>Color indicating score value </li>
-                    </ul>
-                <h3>Colormap(s)</h3>
-                    <ul>
-                        <li>Divergent colormap where two colors (purple and oragne) indicate the extremes of a range of hits (abover or below average) and white is a neutral color in the middle that indicates average</li>
-                    </ul>
-            </div>
+    </div>
+
+    <div class="extra-credit">
+        <h4>Which visualization did you find the most interesting?</h4>
+        <button id="button1" type="button" onClick="buttonClicked1()">#1: Voting</button>
+        <button id="button2" type="button" onClick="buttonClicked2()">#2: MLB</button>
+        <button id="button3" type="button" onClick="buttonClicked3()">#3: NY</button>
+
+        <div id="button-div">
+            The most popular visualization is: N/A
+        </div>
     </div>
 
     <div>
@@ -62,6 +106,7 @@
         </ul>
     </div>
 
+    <script src="main.js"></script> 
 </body>
 
 </html>
